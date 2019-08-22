@@ -23,3 +23,21 @@ else:
         print('测试失败!')
     else:
         print('测试成功!')
+
+
+class Animal(object):
+    def __init__(self):
+        pass
+    a=5
+
+class Dog(Animal):
+    pass
+
+b=Animal()
+print(b.a)
+c=Dog()
+print(c.a)
+
+
+print(hasattr(c,'a'))
+print(isinstance(c,object))
